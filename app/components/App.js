@@ -1,10 +1,11 @@
 import React from 'react';
+import Window from './Window';
 
 class App extends React.Component {
   render () {
     return (
-      <div>
-        <h1>Song Portal</h1>
+      <div className="container">
+        <Window />
       </div>
       )
   }
