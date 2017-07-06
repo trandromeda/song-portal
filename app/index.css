@@ -37,3 +37,10 @@ div.window {
   top: 37%;
   left: 36%;
 }
+
+.credit {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  left: 10vw;
+}
