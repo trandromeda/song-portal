@@ -1,3 +1,39 @@
+.container {
+  max-height: 100%;
+}
+
 body {
-  background: papayawhite;
+  padding: 0;
+  margin: 0;
+  max-height: 100vh;
+  background-color: black;
+}
+
+#base {
+  max-height: 100%;
+}
+
+h1.title {
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 auto;
+}
+
+div.window {
+  background: transparent url('https://unsplash.it/900/900/?random') no-repeat 50% 50%;
+  /*background-size: 100% 100%;*/
+  /*width: 100vw;*/
+  height: 100vh;
+}
+
+.player-box {
+  margin-top: 35vh;
+}
+
+.player {
+  margin: auto;
+  position: relative;
+  top: 37%;
+  left: 36%;
 }
