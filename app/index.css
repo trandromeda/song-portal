@@ -31,9 +31,9 @@ div.window {
   margin-top: 35vh;
 }
 
-.play {
-  display: block;
-  width: 25vw;
-  height: 15vh;
+.player {
   margin: auto;
+  position: relative;
+  top: 37%;
+  left: 36%;
 }
