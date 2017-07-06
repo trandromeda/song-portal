@@ -2,8 +2,14 @@ import React from 'react';
 import Player from './Player';
 import Unsplash, { toJson } from 'unsplash-js';
 
-function Credit {
-  
+function Credit(props) {
+  return (
+    <div className="credit">
+      <p>Photo by 
+      <a href={"https://unsplash.com/" + "@" + props.currentUsername + "?utm_source=songportal&utm_medium=referral&utm_campaign=api-credit"}> {props.currentPhotographer}</a> / 
+      <a href={"https://unsplash.com/?utm_source=songportal&utm_medium=referral&utm_campaign=api-credit"}> Unsplash</a></p>
+    </div>
+  )
 }
 
 class Window extends React.Component {
@@ -58,9 +64,10 @@ class Window extends React.Component {
         <h1 className="title">SongPortal</h1>
 
         <Player />
-        <p className="credit">Photo by 
-        <a href={"https://unsplash.com/" + "@" + this.state.currentUsername + "?utm_source=songportal&utm_medium=referral&utm_campaign=api-credit"}>{this.state.currentPhotographer}</a> / 
-        <a href={"https://unsplash.com/?utm_source=songportal&utm_medium=referral&utm_campaign=api-credit"}>Unsplash</a></p>
+
+        <Credit 
+          currentUsername={this.state.currentUsername} 
+          currentPhotographer={this.state.currentPhotographer} />
 
       </div>
     )
