@@ -20,12 +20,6 @@ h1.title {
   margin: 0 auto;
 }
 
-div.window {
-  background: transparent url('https://unsplash.it/900/900/?random') no-repeat 50% 50%;
-  /*background-size: 100% 100%;*/
-  /*width: 100vw;*/
-  height: 100vh;
-}
 
 .player-box {
   margin-top: 35vh;
@@ -34,6 +28,23 @@ div.window {
 .player {
   margin: auto;
   position: relative;
-  top: 37%;
-  left: 36%;
+  width: 300px;
+  top: 35%;
+}
+
+.credit {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  padding-left: 5vw;
+  height: 6vh;
+  background: #000000;
+  opacity: 0.6;
+  color: #FFFFFF;
+}
+
+.credit a {
+  text-decoration: none;
+  color: #AE90C2;
 }
