@@ -20,6 +20,17 @@ h1.title {
   margin: 0 auto;
 }
 
+.query {
+  margin: auto;
+  margin-top: 5vh;
+  width: 15vw;
+}
+
+.query input[type="submit"] {
+  background-color: #f1f1f1;
+  border: none;  
+}
+
 
 .player-box {
   margin-top: 35vh;
